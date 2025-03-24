@@ -120,6 +120,7 @@ flowchart TD
     class AuthController,GameController,BingoApiController,KenoApiController,LotteryApiController,BankingController,BingoGameEngine,KenoGameEngine,LotteryGameEngine,DropPanGameEngine,AuthService,GameService,BankingService backend
     class Database database
     class BingoHub,KenoHub,LotteryHub,SignalRService realtime
+```
 
 ## SignalR Real-Time Communication Flow (Bingo Example)
 
@@ -197,6 +198,7 @@ sequenceDiagram
     BingoGame->>useSignalR: Cleanup (componentWillUnmount)
     useSignalR->>signalr: Unsubscribe event handlers
     BingoGame->>signalr: stopConnection()
+```
 
 ## React Frontend Component Structure with SignalR Integration
 
@@ -330,3 +332,4 @@ flowchart TD
     end
     
     BingoGame --- BingoGameComponent
+```
