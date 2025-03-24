@@ -4,7 +4,7 @@ title: Flowcharts
 ---
 ## ASP.NET Core + React Gaming Platform Architecture
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     subgraph "Frontend React SPA"
         User([User])
@@ -120,11 +120,11 @@ flowchart TD
     class AuthController,GameController,BingoApiController,KenoApiController,LotteryApiController,BankingController,BingoGameEngine,KenoGameEngine,LotteryGameEngine,DropPanGameEngine,AuthService,GameService,BankingService backend
     class Database database
     class BingoHub,KenoHub,LotteryHub,SignalRService realtime
-```
+</div>
 
 ## SignalR Real-Time Communication Flow (Bingo Example)
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant User as Player
     participant BingoGame as BingoGame.jsx
@@ -198,11 +198,11 @@ sequenceDiagram
     BingoGame->>useSignalR: Cleanup (componentWillUnmount)
     useSignalR->>signalr: Unsubscribe event handlers
     BingoGame->>signalr: stopConnection()
-```
+</div>
 
 ## React Frontend Component Structure with SignalR Integration
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     subgraph "App Component Structure"
         App[App.js]
@@ -332,4 +332,4 @@ flowchart TD
     end
     
     BingoGame --- BingoGameComponent
-```
+</div>
